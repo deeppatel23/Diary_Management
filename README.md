@@ -1,10 +1,15 @@
 # Diary_Management
 
-<h3> Creating Django project: <i>django-admin startproject diary </h3>
-<h3> Checking Migration : python manage.py makemigrations </h3>
-<h3> Making Migration to create database : python manage.py migrate </h3>
-<h3> Runnung app : python manage.py runserver </h3>
-<h3> Creating admin user : python manage.py createsuperuser </h3>
+<h2> Steps to use this repo </h2>
+1. Clone
+2. Make migration
+3. Runserver
+
+<h3> Creating Django project: <i>django-admin startproject diary </i></h3>
+<h3> Checking Migration : <i>python manage.py makemigrations </i></h3>
+<h3> Making Migration to create database : <i>python manage.py migrate </i></h3>
+<h3> Runnung app : <i>python manage.py runserver </i></h3>
+<h3> Creating admin user : <i>python manage.py createsuperuser </i></h3>
 
 
 <h4>models.py: to create a class model that directly creates database queries</h4>
