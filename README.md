@@ -1,9 +1,10 @@
 # Diary_Management
-<h3> django-admin startproject diary </h3>
-<h3> python manage.py makemigrations </h3>
-<h3> python manage.py migrate </h3>
-<h3> python manage.py runserver </h3>
-<h3> python manage.py createsuperuser </h3>
+
+<h3> Creating Django project: <i>django-admin startproject diary </h3>
+<h3> Checking Migration : python manage.py makemigrations </h3>
+<h3> Making Migration to create database : python manage.py migrate </h3>
+<h3> Runnung app : python manage.py runserver </h3>
+<h3> Creating admin user : python manage.py createsuperuser </h3>
 
 
 <h4>models.py: to create a class model that directly creates database queries</h4>
