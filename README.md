@@ -6,7 +6,7 @@
 <h3> python manage.py createsuperuser </h3>
 
 
-##models.py: to create a class model that directly creates database queries
-##views.py: store business logic in form of python functions
-##urls.py: store path of functions present in views.py
-##templates: stores frontend logic, uses jinja tags to communicate with backend
+<h4>models.py: to create a class model that directly creates database queries</h4>
+<h4>views.py: store business logic in form of python functions</h4>
+<h4>urls.py: store path of functions present in views.py</h4>
+<h4>templates: stores frontend logic, uses jinja tags to communicate with backend</h4>
