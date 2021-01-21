@@ -9,7 +9,7 @@
 
 <h2> Important Django commands and files </h2>
 <ul>
-<li>h4> Creating Django project: <i>django-admin startproject diary </i></h4></li>
+<li><h4> Creating Django project: <i>django-admin startproject diary </i></h4></li>
 <li><h4> Checking Migration : <i>python manage.py makemigrations </i></h4></li>
 <li><h4> Making Migration to create database : <i>python manage.py migrate </i></h4></li>
 <li><h4> Runnung app : <i>python manage.py runserver </i></h4></li>
