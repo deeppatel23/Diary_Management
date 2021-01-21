@@ -1,0 +1,134 @@
+{% extends 'base.html' %}
+<!DOCTYPE html>
+<html lang="en">
+{% block title %}
+<title>Life Journey</title>
+{% endblock %}
+
+{% block content %}
+<body>
+  <div class="container">
+
+    <!-- title row -->
+    <h1 style="color: white; align-items: center; text-align: center;">
+      Hello {{ user.username }}
+      <br>
+    </h1>
+    <h3 style="color: rgb(255, 255, 255); align-items: center; text-align: center; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+      Start Your Self-care Journal
+    </h3 >
+    <br>
+    <div class="row">
+      <div class="offset-md-2 col-lg-9">
+        <div class="page-header" style="text-align: center;">
+          
+        </div>
+      </div>
+    </div>
+
+    <!-- Add a todo row -->
+    <div class="row">
+      <div class="offset-md-2 col-lg-8">
+        
+        <form method="post" action="{% url 'mydiary:add' %}">
+          {% csrf_token %}
+          <div class="form-row">
+            <div style="margin-right: auto; margin-left: auto; text-align: center;" class="col-md-8">
+              <input type="text" class="form-control" style="font-weight: bold; color:royalblue; text-align:center" name="title" placeholder="Enter Title" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Title'" required>
+            </div>
+            <div style="margin-right: auto; margin-left: auto;" class="col-md-8">
+              <br>
+              <textarea name="description" style="resize:none; color: rgb(75, 153, 226); border-top-right-radius: 5px; border-top-left-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; border: paleturquoise;" rows="8" cols="47" placeholder="Enter about your day.." onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter about your day..'" required></textarea>
+            </div>
+            <div style="margin-right: auto; margin-left: 330px; margin-top: 15px; margin-bottom: 30px" class="col-md-8">
+              <button type="submit"  name="submit" class="btn btn-outline-primary">
+                Add
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <hr />
+
+    <!-- todo list row -->
+    <div class="row">
+      <div class="offset-md-2 col-lg-8">
+        <div class="list-group">
+          <h3 style="color: white; text-align:center">My life journey...</h3><br>
+          {% for todo in m reversed %}
+          <br>
+          <div class="list-group-item">
+            <form method="POST" action="{% url 'mydiary:update' todo.id %}">
+              {% csrf_token %}
+              <input type="text" class="form-control" value="{{ todo.title }}" style="font-weight: bold; color:royalblue" name="title"  readonly>
+              <br><textarea name="description" rows="10" cols="68" wrap="soft" style="resize: none; color: rgb(75, 153, 226); border: paleturquoise;">{{ todo.description }}</textarea>
+              <br>
+              <button type="submit" name="update" style="float: right; margin-right: 40px" class="btn btn-outline-primary"> 
+                Update
+              </button>
+            
+            </form>
+            
+            <p style="font-weight: normal; color: grey"> Last edit at : {{ todo.updated_at }}<br>Created at : {{ todo.created_at }}</p>
+            <div style="color: red;">
+              <a href="{% url 'mydiary:delete' todo.id %}" title="Delete" style="color: red; float: right; margin-top: -8%">
+                  <i class="far fa-trash-alt"></i>
+                </a>
+            </div>
+            
+          </div>
+          {% endfor %}
+          <div style="float: top; position:fixed; right:15px; top:15px; font-weight: bold">
+            <a href="{% url 'logout' %}" style="color: rgb(0, 17, 255);">LOGOUT</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+{% endblock %}
+<style>
+input{
+    height:500px;
+    width:500px;
+    word-break: break-word;
+}
+
+.page-header {
+  align-items: center;
+  text-align: center;
+  margin-top: 60px;
+}
+
+.fa-trash-alt {
+  color:red;
+  float: right; 
+  cursor: pointer;
+}
+
+.row{
+  font-weight: bold;
+  align-content: center;
+}
+.container{
+  background-color:green;
+  justify-content: center;
+  align-items: center;
+}
+.body{
+  background-color: #76b852;
+}
+
+</style>
+
+<script>
+  $('text').keypress(function(event) {
+    if (event.which == 13) {
+       event.stopPropagation();
+    }
+ });​
+</script>
+
+</html>
