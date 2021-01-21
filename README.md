@@ -1,5 +1,17 @@
 # Diary_Management
 
+<h2>Hello everyone!</h2>
+<h4>This is the first time I worked on a webapp based on Django. It's a basic #Diary app (#diarymanagement or #journaling) with few features and simple UI. I used SQLite #database for this app. Features of app are are:</h4>
+<ul>
+<li>Register/Login/Logout</li>
+<li>Create an entry</li>
+<li>Update your previous entry</li>
+<li>Created/Last edit Date record</li>
+<li>Delete entry</li>
+</ul>
+
+<h4>Working with #Django was fun and pretty easy. Also, the inbuilt admin panel helped a lot. Summarising my experience, Django is amazing👍🏻</h4>
+
 <h2> Steps to use this repo </h2>
 <ol>
   <li>Clone</li>
