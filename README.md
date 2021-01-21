@@ -19,3 +19,5 @@
 <li><h4>urls.py: store path of functions present in views.py</h4></li>
 <li><h4>templates: stores frontend logic, uses jinja tags to communicate with backend</h4></li>
 </ul>
+
+<h3>Demo </h3> https://www.linkedin.com/posts/deep-patel-92b95b1a3_diary-diarymanagement-journaling-activity-6731604737482911744-eogV
