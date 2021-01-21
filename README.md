@@ -1,10 +1,13 @@
 # Diary_Management
 
 <h2> Steps to use this repo </h2>
-1. Clone
-2. Make migration
-3. Runserver
+<ol>
+  <li>Clone</li>
+  <li>Make migration</li>
+  <li>Runserver</li>
+</ol>
 
+<h2> Important Django commands and files </h2>
 <h3> Creating Django project: <i>django-admin startproject diary </i></h3>
 <h3> Checking Migration : <i>python manage.py makemigrations </i></h3>
 <h3> Making Migration to create database : <i>python manage.py migrate </i></h3>
