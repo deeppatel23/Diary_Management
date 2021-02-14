@@ -1,3 +1,4 @@
 from django.contrib import admin
+from mydiary.models import memory
 
-# Register your models here.
+admin.site.register(memory)
