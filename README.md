@@ -21,16 +21,16 @@
 
 <h2> Important Django commands and files </h2>
 <ul>
-<li><h4> Creating Django project: <i>django-admin startproject project_name </i></h4></li>
-<li><h4> Checking Migration : <i>python manage.py makemigrations </i></h4></li>
-<li><h4> Making Migration to create database : <i>python manage.py migrate </i></h4></li>
-<li><h4> Make a new app in project : <i>python manage.py startapp app_name </i></h4></li>
-<li><h4> Running whole website : <i>python manage.py runserver </i></h4></li>
-<li><h4> Creating admin user : <i>python manage.py createsuperuser </i></h4></li>
-<li><h4>models.py: to create a class model that directly creates database queries</h4></li>
-<li><h4>views.py: store business logic in form of python functions</h4></li>
-<li><h4>urls.py: store path of functions present in views.py</h4></li>
-<li><h4>templates: stores frontend logic, uses jinja tags to communicate with backend</h4></li>
+<li> Creating Django project: <i>django-admin startproject project_name </i></li>
+<li>Checking Migration : <i>python manage.py makemigrations </i></li>
+<li> Making Migration to create database : <i>python manage.py migrate </i></li>
+<li> Make a new app in project : <i>python manage.py startapp app_name </i></li>
+<li> Running whole website : <i>python manage.py runserver </i></li>
+<li> Creating admin user : <i>python manage.py createsuperuser </i></li>
+<li> models.py: to create a class model that directly creates database queries</li>
+<li> views.py: store business logic in form of python functions</li>
+<li> urls.py: store path of functions present in views.py</li>
+<li> templates: stores frontend logic, uses jinja tags to communicate with backend</li>
 </ul>
 
 <h3>Demo </h3> https://www.linkedin.com/posts/deep-patel-92b95b1a3_diary-diarymanagement-journaling-activity-6731604737482911744-eogV
